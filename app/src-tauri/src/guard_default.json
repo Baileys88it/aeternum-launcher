@@ -1,0 +1,22 @@
+{
+  "version": 1,
+  "_sources": {
+    "WRobot": "https://wrobot.eu/files/file/2-wrobot-official/ (install notes: launch WRobot.exe)",
+    "Honorbuddy": "https://www.processchecker.com/file/Honorbuddy.exe.html ; HBRelog: https://github.com/BosslandGmbH/HBRelog",
+    "PQR": "https://www.ownedcore.com/forums/world-of-warcraft/world-of-warcraft-bots-programs/329033-beta-pqrotation-automated-ability-priority-queue.html (PQR.exe, PQRUpdater.exe, PriorityQueueRotation.exe)",
+    "FireHack": "https://forums.malwarebytes.com/topic/178788-microsoft-system-certificate-roots-modified-by-firehackexe/",
+    "Cheat Engine": "https://github.com/cheat-engine/cheat-engine/issues/2983 (exe names), https://github.com/cheat-engine/cheat-engine/issues/1326 and README (speedhack/vehdebug DLLs), allochook-x86_64.dll in the 7.5 file list"
+  },
+  "tools": [
+    { "name": "WRobot", "processes": ["WRobot.exe"] },
+    { "name": "Honorbuddy", "processes": ["Honorbuddy.exe", "HBRelog.exe"] },
+    { "name": "PQR (PQRotation)", "processes": ["PQR.exe", "PQRUpdater.exe", "PriorityQueueRotation.exe"] },
+    { "name": "FireHack", "processes": ["FireHack.exe"] },
+    {
+      "name": "Cheat Engine",
+      "processes": ["Cheat Engine.exe", "cheatengine-i386.exe", "cheatengine-x86_64.exe", "cheatengine-x86_64-SSE4-AVX2.exe"],
+      "modules": ["speedhack-i386.dll", "speedhack-x86_64.dll", "vehdebug-i386.dll", "vehdebug-x86_64.dll", "allochook-i386.dll", "allochook-x86_64.dll"]
+    }
+  ],
+  "ignoreWindowProcesses": ["chrome.exe", "msedge.exe", "firefox.exe", "opera.exe", "opera_gx.exe", "brave.exe", "vivaldi.exe", "explorer.exe", "discord.exe"]
+}

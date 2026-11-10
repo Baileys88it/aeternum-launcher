@@ -1,0 +1,8 @@
+## Interface: 16001
+## Title: Aeternum Quest Tag
+## Notes: Yellow QUEST label above the nameplate of creatures your active quests still need (kill targets and quest item droppers). /aqt to toggle.
+## Author: Aeternum
+## Version: 1.0.0
+## SavedVariables: AeternumQuestTagDB
+Data.lua
+AeternumQuestTag.lua

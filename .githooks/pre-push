@@ -1,0 +1,8 @@
+#!/bin/sh
+# Neutrality guard for the whole tree. Enable with: git config core.hooksPath .githooks
+PY=
+for c in python3 python py; do
+    if command -v "$c" >/dev/null 2>&1 && "$c" -c "import sys" >/dev/null 2>&1; then PY=$c; break; fi
+done
+[ -z "$PY" ] && { echo "neutrality hook: python not found, skipping (CI still runs the check)"; exit 0; }
+exec "$PY" contrib/neutrality/check_neutrality.py --all

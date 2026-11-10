@@ -1,0 +1,4 @@
+# Paths skipped by contrib/neutrality/check_neutrality.py.
+# Only third-party files kept byte-identical to their upstream belong here.
+app/src-tauri/Cargo.lock
+docker/patches/*
